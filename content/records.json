@@ -1,0 +1,34 @@
+[
+  {
+    "id": "foodoscope",
+    "name": "Foodoscope",
+    "organiser": "IIIT Delhi",
+    "outcome": "National Finalist — scalable schema architecture",
+    "year": "2026",
+    "logo": "/images/records/foodoscope__vmu17a8jm.png"
+  },
+  {
+    "id": "rift-26",
+    "name": "RIFT '26",
+    "organiser": "24-hour build",
+    "outcome": "Shipped a full API deployment layer",
+    "year": "2026",
+    "logo": "/images/records/rift-26__vmu17aqws.png"
+  },
+  {
+    "id": "escape-room",
+    "name": "Escape Room",
+    "organiser": "Tech Challenge",
+    "outcome": "Podium finish — C++/Python bug-fixing",
+    "year": "2025",
+    "logo": null
+  },
+  {
+    "id": "mckinsey-forward",
+    "name": "McKinsey Forward",
+    "organiser": "Programme",
+    "outcome": "Executive management frameworks",
+    "year": "2025",
+    "logo": "/images/records/mckinsey-forward__vmu17bacx.png"
+  }
+]

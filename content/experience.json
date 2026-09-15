@@ -1,0 +1,38 @@
+[
+  {
+    "id": "vk-global",
+    "node": "Node A",
+    "company": "VK Global Digital",
+    "role": "Software Engineering Intern",
+    "timeline": "Aug 2026 — Present",
+    "location": "Faridabad, India",
+    "stack": [
+      "TypeScript",
+      "Node.js",
+      "Prisma ORM",
+      "React Native"
+    ],
+    "metrics": [
+      "Spearheaded Snop Vantage cross-platform CRM.",
+      "Architected Node.js/TypeScript geofence engine flagging 25% anomaly claims.",
+      "Engineered Prisma ORM automatic ledger rollbacks."
+    ]
+  },
+  {
+    "id": "genero",
+    "node": "Node B",
+    "company": "Genero Technology",
+    "role": "Data Analyst Intern",
+    "timeline": "May 2026 — July 2026",
+    "location": "New Delhi, India",
+    "stack": [
+      "Python",
+      "SQL",
+      "LLM Tooling"
+    ],
+    "metrics": [
+      "Engineered Python/SQL extraction scripts reducing wrangling by 5+ hours weekly.",
+      "Integrated LLM assistants for EDA."
+    ]
+  }
+]

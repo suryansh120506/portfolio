@@ -1,0 +1,42 @@
+[
+  {
+    "id": "snop-vantage",
+    "title": "Snop Vantage",
+    "summary": "Architected a Node.js/TypeScript geofencing engine automating 25% anomaly claims, backed by Prisma ORM ledger rollbacks.",
+    "stack": "TypeScript · Node.js · Prisma",
+    "year": "2026",
+    "liveUrl": null,
+    "repoUrl": null,
+    "thumbnail": "/images/projects/snop-vantage__vmu17xmhq.png"
+  },
+  {
+    "id": "ticx",
+    "title": "TICX",
+    "summary": "Decoupled quantitative trading terminal. Integrates a PyTorch forecasting engine and NLP pipeline with a Next.js UI via a zero-blocking FastAPI backend.",
+    "stack": "",
+    "year": "2026",
+    "liveUrl": "https://ticx-cyan.vercel.app/sign-in?redirect_url=https%3A%2F%2Fticx-cyan.vercel.app%2Fpulse",
+    "repoUrl": "https://github.com/suryansh120506/TicX",
+    "thumbnail": "/images/projects/ticx__vmu0uv5tt.png"
+  },
+  {
+    "id": "quant-engine",
+    "title": "Quant Engine",
+    "summary": "A predictive quantitative framework powered by a 3-layer Stacked LSTM model designed to extract temporal price signatures from NSE volatility. Features multivariate normalization across raw price action and moving averages, with inference pipelines decoupled via strict SDLC patterns.",
+    "stack": "",
+    "year": "2025",
+    "liveUrl": "https://quantengine-c96h4allauvtj2d55eftf2.streamlit.app/",
+    "repoUrl": "https://github.com/suryansh120506/QuantEngine",
+    "thumbnail": "/images/projects/quant-engine__vmu11msc1.png"
+  },
+  {
+    "id": "sales-intelligence-analytics-dashboard",
+    "title": "Sales Intelligence Analytics Dashboard",
+    "summary": "An end-to-end telemetry dashboard engineered with Power BI and SQL. Processed 10,000+ transaction records by architecting complex DAX measures for high-availability revenue tracking and actionable business intelligence.",
+    "stack": "",
+    "year": "2025",
+    "liveUrl": "https://app.powerbi.com/groups/me/reports/b91cac08-7fb2-4402-b20f-9574262b1b40/abab9e67a2333e662c32?experience=power-bi",
+    "repoUrl": null,
+    "thumbnail": "/images/projects/sales-intelligence-analytics-dashboard__vmu11usqs.png"
+  }
+]

@@ -1,26 +1,86 @@
 @import "tailwindcss";
 
+/*
+ * Palette lifted from the amix web-motion reference: a warm bone ground with
+ * near-black ink, plus an inverted block for sections that need to go dark.
+ * High contrast by construction — the readability problem with the earlier
+ * pastel attempt was low contrast, not light-vs-dark.
+ */
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --bone: #f4f3f0;
+  --ink: #0a0a0a;
+  --ink-muted: #555555;
+  --ink-faint: #8a8a85;
+  --rule: rgba(10, 10, 10, 0.13);
+
+  /* Scrim over the WebGL layer. Driven by scroll from the DOM layer. */
+  --scrim: 0.55;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-bone: var(--bone);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/*
+  Unlayered rules outrank Tailwind's layered utilities, so keep these to
+  genuine document-level defaults only.
+*/
+html {
+  color-scheme: light;
+  background: var(--bone);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  /* Stops rubber-band overscroll fighting Lenis at the extremes. */
+  overscroll-behavior-y: none;
 }
+
+::selection {
+  background: var(--ink);
+  color: var(--bone);
+}
+
+/* Inverted block: sections that plunge into the dark hall. */
+.invert-block {
+  background: var(--ink);
+  color: var(--bone);
+}
+.invert-block ::selection {
+  background: var(--bone);
+  color: var(--ink);
+}
+
+/*
+ * Boot focus-pull.
+ *
+ * The page renders fully behind the loader, defocused, and sharpens as the
+ * loader clears — an uncovering rather than a cross-fade.
+ *
+ * The filter is REMOVED outright once booted, not just set to 0: a filter
+ * creates a containing block for fixed descendants, which would otherwise
+ * break the fixed nav and canvas for the rest of the session. Default is 0px
+ * so that a JS failure never leaves the page permanently blurred.
+ */
+.boot-shell {
+  filter: blur(var(--boot-blur, 0px));
+  transform: scale(var(--boot-scale, 1));
+  transform-origin: center;
+  will-change: filter, transform;
+}
+
+html[data-booted="true"] .boot-shell {
+  filter: none;
+  transform: none;
+  will-change: auto;
+}
+
